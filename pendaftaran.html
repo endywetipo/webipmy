@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Pendaftaran - PPMB IPMY</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding-top: 80px; /* Beri ruang di atas agar logo tidak tertutup */
+            background-color: #f8f9fa; /* Warna latar belakang yang lebih terang */
+            color: #333;
+            position: relative; /* Untuk positioning logo */
+        }
+
+        .logo-wrapper {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 70px;
+            background-color: white; /* Latar belakang putih untuk logo */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            z-index: 1000; /* Pastikan logo di atas konten lain */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .logo-left, .logo-right {
+            max-height: 50px;
+            height: auto;
+        }
+
+        nav.btn-section {
+            text-align: center;
+            padding: 15px 0;
+            background-color: #004080;
+            position: sticky; /* Agar navigasi tetap terlihat saat di-scroll */
+            top: 70px; /* Tepat di bawah logo */
+            z-index: 999;
+        }
+
+        nav.btn-section a {
+            color: white;
+            padding: 10px 15px;
+            margin: 5px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s;
+            background-color: #007bff; /* Warna tombol navigasi yang lebih menarik */
+        }
+
+        nav.btn-section a:hover {
+            background-color: #0056b3;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 600px; /* Lebar section diperkecil agar lebih fokus pada form */
+            margin: 90px auto 20px; /* Margin atas disesuaikan agar tidak tertutup navigasi */
+            background-color: #fff; /* Latar belakang putih untuk section */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        section h2 {
+            font-size: 28px;
+            color: #004080;
+            margin-bottom: 20px;
+            text-align: center;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+        }
+
+        section p {
+            font-size: 16px;
+            line-height: 1.6;
+            text-align: center;
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #495057;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #28a745;
+            color: white;
+            font-weight: bold;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            font-size: 0.9em;
+            color: #777;
+            position: absolute; /* Atur posisi footer di bagian bawah */
+            bottom: 0;
+            width: 100%;
+            background-color: #f8f9fa;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-wrapper">
+        <img src="images/logo-kiri.png" class="logo-left" alt="Logo IPMY">
+        <img src="images/logo-kanan.jpg" class="logo-right" alt="Logo PPMB">
+    </div>
+    <nav class="btn-section">
+        <a href="index.html">Beranda</a>
+        <a href="tentang-kami.html">Tentang Kami</a>
+        <a href="pendaftaran.html" class="active">Pendaftaran</a>
+        <a href="dokumentasi.html">Dokumentasi</a>
+        <a href="donasi.html">Donasi</a>
+        <a href="kontak.html">Kontak</a>
+    </nav>
+    <section>
+        <h2>Pendaftaran Mahasiswa Baru</h2>
+        <p>Silakan isi formulir berikut untuk mendaftar sebagai calon mahasiswa baru yang akan dibimbing oleh PPMB IPMY Se-Jabodetabek:</p>
+        <form id="whatsapp-form">
+            <label for="nama">Nama Lengkap:</label>
+            <input type="text" id="nama" name="nama" placeholder="Masukkan Nama Lengkap Anda" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="contoh@email.com" required>
+
+            <label for="telepon">Nomor HP / WA:</label>
+            <input type="text" id="telepon" name="telepon" placeholder="08xxxxxxxxxx" required>
+
+            <label for="asal">Asal Daerah:</label>
+            <input type="text" id="asal" name="asal" placeholder="Kota/Kabupaten Asal" required>
+
+            <label for="kampus">Kampus Tujuan:</label>
+            <input type="text" id="kampus" name="kampus" placeholder="Nama Kampus Tujuan" required>
+
+             <label for="Jurusan">Jurusan:</label>
+            <input type="text" id="Jurusan" name="Jurusan" placeholder="Jurusan" required>
+
+             <label for="Alamat/Tempat">Alamat/Tempat Tinggal :</label>
+            <input type="text" id="" name="Alamat" placeholder="Alamat/Tempat Tinggal" required>
+
+            <label for="pesan">Pesan Tambahan (Opsional):</label>
+            <textarea id="pesan" name="pesan" rows="4" placeholder="Tulis pesan tambahan di sini"></textarea>
+
+            <button type="submit">Kirim ke WhatsApp</button>
+        </form>
+    </section>
+   
+        <p>&copy; 2025-26 PPMB IPMY Se-Jabodetabek.</p>
+    
+
+    <script>
+        document.getElementById('whatsapp-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const nama = document.getElementById('nama').value;
+            const email = document.getElementById('email').value;
+            const telepon = document.getElementById('telepon').value;
+            const asal = document.getElementById('asal').value;
+            const kampus = document.getElementById('kampus').value;
+            const pesan = document.getElementById('pesan').value;
+            const noWA = '6282246556920';
+            const text = `*PENDAFTARAN MAHASISWA BARU IPMY 2025*\n\nNama: ${nama}\nEmail: ${email}\nNo HP/WA: ${telepon}\nAsal Daerah: ${asal}\nKampus Tujuan: ${kampus}\nPesan Tambahan: ${pesan}`;
+            const url = `https://wa.me/${noWA}?text=${encodeURIComponent(text)}`;
+            window.open(url, '_blank');
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Kontak - PPMB IPMY</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding-top: 70px; /* Beri ruang di atas agar logo tidak tertutup */
+            background-color: #f8f9fa; /* Warna latar belakang yang lebih terang */
+            color: #333;
+            position: relative; /* Untuk positioning logo */
+            text-align: center;
+        }
+
+        .logo-wrapper {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 60px;
+            background-color: white; /* Latar belakang putih untuk logo */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            z-index: 1000; /* Pastikan logo di atas konten lain */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .logo-left, .logo-right {
+            max-height: 40px;
+            height: auto;
+        }
+
+        nav.btn-section {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #004080;
+            position: sticky; /* Agar navigasi tetap terlihat saat di-scroll */
+            top: 60px; /* Tepat di bawah logo */
+            z-index: 999;
+        }
+
+        nav.btn-section a {
+            color: white;
+            padding: 8px 12px;
+            margin: 5px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s;
+            background-color: #007bff; /* Warna tombol navigasi yang lebih menarik */
+        }
+
+        nav.btn-section a:hover {
+            background-color: #0056b3;
+        }
+
+        section#kontak {
+            padding: 40px 20px;
+            max-width: 600px; /* Lebar section disesuaikan */
+            margin: 80px auto 20px; /* Margin atas disesuaikan */
+            background-color: #fff; /* Latar belakang putih untuk section */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        section#kontak h2 {
+            font-size: 28px;
+            color: #004080;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+        }
+
+        section#kontak p.intro {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        .kontak-details {
+            margin-top: 30px;
+            text-align: left; /* Kembali ke rata kiri untuk detail kontak */
+        }
+
+        .kontak-details p {
+            font-size: 16px;
+            margin: 10px 0;
+            color: #495057;
+        }
+
+        .kontak-details p strong {
+            font-weight: bold;
+            color: #007bff; /* Warna penekanan */
+        }
+
+        .social-links {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .social-links p {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .social-links ul {
+            list-style: none;
+            padding: 0;
+            display: inline-block;
+        }
+
+        .social-links ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        .social-links ul li a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .social-links ul li a:hover {
+            color: #0056b3;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            font-size: 0.9em;
+            color: #777;
+            position: absolute; /* Atur posisi footer di bagian bawah */
+            bottom: 0;
+            width: 100%;
+            background-color: #f8f9fa;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-wrapper">
+        <img src="images/logo-kiri.png" class="logo-left" alt="Logo IPMY">
+        <img src="images/logo-kanan.jpg" class="logo-right" alt="Logo PPMB">
+    </div>
+    <nav class="btn-section">
+        <a href="index.html">Beranda</a>
+        <a href="tentang-kami.html">Tentang Kami</a>
+        <a href="pendaftaran.html">Pendaftaran</a>
+        <a href="dokumentasi.html">Dokumentasi</a>
+        <a href="donasi.html">Donasi</a>
+        <a href="kontak.html" class="active">Kontak</a>
+    </nav>
+    <section id="kontak">
+        <h2>Hubungi Kami!</h2>
+        <p class="intro">Kami siap membantu dan menjawab pertanyaan Anda. Jangan ragu untuk menghubungi tim PPMB IPMY Se-Jabodetabek 2025 melalui informasi kontak di bawah ini.</p>
+        <div class="kontak-details">
+            <p><strong>Alamat:</strong> Jl. Batu Ampar No. 25A, Kramat Jati, Jakarta Timur, DKI Jakarta 13520</p>
+            <p><strong>HP/WA (Koordinator):</strong> <a href="https://wa.me/6282246556920">0822-4655-6920 (Endy Wetipo)</a></p>
+            <p><strong>Email:</strong> <a href="mailto:wetipoendy@gmail.com">wetipoendy@gmail.com</a></p>
+        </div>
+        <div class="social-links">
+            <p>Atau, Anda bisa terhubung dengan kami melalui media sosial:</p>
+            <ul>
+                <li><a href="#" target="_blank">Instagram</a> <small>(Segera hadir)</small></li>
+                <li><a href="#" target="_blank">Facebook</a> <small>(Segera hadir)</small></li>
+            </ul>
+        </div>
+    </section>
+   
+</body>
+</html>

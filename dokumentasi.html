@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Dokumentasi - PPMB IPMY</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding-top: 70px; /* Beri ruang di atas agar logo tidak tertutup */
+            background-color: #f8f9fa; /* Warna latar belakang yang lebih terang */
+            color: #333;
+            position: relative; /* Untuk positioning logo */
+        }
+
+        .logo-wrapper {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 60px;
+            background-color: white; /* Latar belakang putih untuk logo */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            z-index: 1000; /* Pastikan logo di atas konten lain */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .logo-left, .logo-right {
+            max-height: 40px;
+            height: auto;
+        }
+
+        nav.btn-section {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #004080;
+            position: sticky; /* Agar navigasi tetap terlihat saat di-scroll */
+            top: 60px; /* Tepat di bawah logo */
+            z-index: 999;
+        }
+
+        nav.btn-section a {
+            color: white;
+            padding: 8px 12px;
+            margin: 5px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s;
+            background-color: #007bff; /* Warna tombol navigasi yang lebih menarik */
+        }
+
+        nav.btn-section a:hover {
+            background-color: #0056b3;
+        }
+
+        section#dokumentasi {
+            padding: 40px 20px;
+            max-width: 900px; /* Lebar section disesuaikan */
+            margin: 80px auto 20px; /* Margin atas disesuaikan */
+            background-color: #fff; /* Latar belakang putih untuk section */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        section#dokumentasi h2 {
+            font-size: 28px;
+            color: #004080;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+        }
+
+        section#dokumentasi p.intro {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        #dokumentasi .gallery {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #dokumentasi .gallery img {
+            margin: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease-in-out;
+            max-width: 220px; /* Ukuran gambar diperkecil agar lebih banyak muat dalam satu baris */
+            height: auto;
+        }
+
+        #dokumentasi .gallery img:hover {
+            transform: scale(1.08);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            font-size: 0.9em;
+            color: #777;
+            position: absolute; /* Atur posisi footer di bagian bawah */
+            bottom: 0;
+            width: 100%;
+            background-color: #f8f9fa;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-wrapper">
+        <img src="images/logo-kiri.png" class="logo-left" alt="Logo IPMY">
+        <img src="images/logo-kanan.jpg" class="logo-right" alt="Logo PPMB">
+    </div>
+    <nav class="btn-section">
+        <a href="index.html">Beranda</a>
+        <a href="tentang-kami.html">Tentang Kami</a>
+        <a href="pendaftaran.html">Pendaftaran</a>
+        <a href="dokumentasi.html" class="active">Dokumentasi</a>
+        <a href="donasi.html">Donasi</a>
+        <a href="kontak.html">Kontak</a>
+    </nav>
+    <section id="dokumentasi">
+        <h2>Dokumentasi Kegiatan</h2>
+        <p class="intro">Intip keseruan dan kebersamaan dalam berbagai kegiatan PPMB IPMY dari tahun ke tahun. Momen kebersamaan ini adalah semangat kami dalam menyambut dan membimbing adik-adik mahasiswa baru.</p>
+        <div class="gallery">
+            <img src="images/foto1.jpg" alt="Kegiatan 1">
+            <img src="images/foto2.jpg" alt="Kegiatan 2">
+            <img src="images/foto3.jpg" alt="Kegiatan 3">
+            <img src="images/foto4.jpg" alt="Kegiatan 4">
+            <img src="images/foto5.jpg" alt="Kegiatan 5">
+            <img src="images/foto6.jpg" alt="Kegiatan 6">
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025-26 PPMB IPMY Se-Jabodetabek.</p>
+    </footer>
+</body>
+</html>

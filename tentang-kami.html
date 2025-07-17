@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Tentang Kami - PPMB IPMY</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding-top: 70px; /* Beri ruang di atas agar logo tidak tertutup */
+            background-color: #e9ecef; /* Warna latar belakang yang lebih lembut */
+            color: #333;
+            position: relative; /* Untuk positioning logo */
+        }
+
+        .logo-wrapper {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 60px;
+            background-color: white; /* Latar belakang putih untuk logo */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            z-index: 1000; /* Pastikan logo di atas konten lain */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .logo-left, .logo-right {
+            max-height: 40px;
+            height: auto;
+        }
+
+        nav.btn-section {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #004080;
+            position: sticky; /* Agar navigasi tetap terlihat saat di-scroll */
+            top: 60px; /* Tepat di bawah logo */
+            z-index: 999;
+        }
+
+        nav.btn-section a {
+            color: white;
+            padding: 8px 12px;
+            margin: 5px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s;
+            background-color: #007bff; /* Warna tombol navigasi yang lebih menarik */
+        }
+
+        nav.btn-section a:hover {
+            background-color: #0056b3;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 800px; /* Lebar section disesuaikan */
+            margin: 80px auto 20px; /* Margin atas disesuaikan */
+            background-color: #fff; /* Latar belakang putih untuk section */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        section h2 {
+            font-size: 28px;
+            color: #004080;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+
+        section p {
+            font-size: 16px;
+            line-height: 1.7; /* Sedikit diperlebar */
+            color: #555;
+            margin-bottom: 15px;
+            text-align: justify; /* Rata kiri dan kanan */
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-wrapper">
+        <img src="images/logo-kiri.png" class="logo-left" alt="Logo IPMY">
+        <img src="images/logo-kanan.jpg" class="logo-right" alt="Logo PPMB">
+    </div>
+    <nav class="btn-section">
+        <a href="index.html">Beranda</a>
+        <a href="tentang-kami.html" class="active">Tentang Kami</a>
+        <a href="pendaftaran.html">Pendaftaran</a>
+        <a href="dokumentasi.html">Dokumentasi</a>
+        <a href="donasi.html">Donasi</a>
+        <a href="kontak.html">Kontak</a>
+    </nav>
+    <section>
+        <h2>Tentang Kami</h2>
+        <p>Selamat datang di halaman "Tentang Kami" PPMB IPMY Se-Jabodetabek 2025-26! Kami adalah panitia yang berdedikasi, terdiri dari para pelajar dan mahasiswa yang tergabung dalam Ikatan Pelajar dan Mahasiswa Yahukimo (IPMY). Inisiatif ini lahir dari semangat persaudaraan dan keinginan kuat untuk membantu adik-adik mahasiswa baru yang akan melanjutkan pendidikan tinggi di wilayah Jabodetabek.</p>
+        <p>Tujuan utama kami adalah untuk memfasilitasi transisi yang mulus dan menyenangkan bagi para mahasiswa baru, khususnya dari Kabupaten Yahukimo, Papua. Kami memahami betul tantangan dan adaptasi yang perlu dihadapi saat merantau ke lingkungan baru. Oleh karena itu, kami hadir untuk memberikan pendampingan, informasi yang relevan, serta dukungan moril agar mereka dapat segera beradaptasi dengan kehidupan perkuliahan dan sosial di Jakarta, Bogor, Depok, Tangerang, dan Bekasi.</p>
+        <p>Rangkaian kegiatan PPMB dirancang secara komprehensif, dimulai dari sebelum kedatangan mahasiswa baru (pra-kedatangan) hingga mereka telah menetap dan memulai perkuliahan (pasca-kedatangan). Program kami meliputi penyediaan informasi lengkap mengenai kampus dan kehidupan di Jabodetabek, layanan konsultasi online, bantuan penjemputan di bandara atau stasiun, penyediaan akomodasi sementara yang nyaman dan aman, serta program orientasi yang mengenalkan mereka pada lingkungan kampus, fasilitas, dan komunitas mahasiswa.</p>
+        <p>Kami bangga menjadi bagian dari perjalanan pendidikan adik-adik mahasiswa baru. Dengan semangat <strong>"Satu Hati, Satu Langkah, Satu Tujuan Untuk Adik-Adik Kami"</strong>, kami berkomitmen untuk terus memberikan yang terbaik dan menjadi jembatan penghubung antara kampung halaman dan kehidupan perkuliahan di Jabodetabek. Kami percaya bahwa kebersamaan dan dukungan dari sesama akan mengantarkan mereka menuju kesuksesan akademik dan pribadi. Mari bergabung bersama kami dalam mewujudkan mimpi generasi muda Yahukimo!</p>
+    </section>
+    <footer>
+        <p>&copy; 2025-26 PPMB IPMY Se-Jabodetabek.</p>
+    </footer>
+</body>
+</html>
